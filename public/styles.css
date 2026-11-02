@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KALU — Personal AI</title>
+    <meta
+      name="description"
+      content="KALU is a polished personal AI assistant for modern web users."
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <div class="brand-mark">K</div>
+          <div>
+            <p class="eyebrow">Personal AI</p>
+            <h1>KALU</h1>
+          </div>
+        </div>
+
+        <nav class="nav-links">
+          <button class="nav-button active">Chat</button>
+          <button class="nav-button">Workflow</button>
+          <button class="nav-button">Ideas</button>
+        </nav>
+
+        <div class="quick-panel">
+          <p class="panel-label">Quick prompts</p>
+          <div class="prompt-list">
+            <button class="prompt-chip" data-prompt="Plan my launch strategy">Launch strategy</button>
+            <button class="prompt-chip" data-prompt="Help me write a clean product brief">Product brief</button>
+            <button class="prompt-chip" data-prompt="Design a simple landing page for my app">Landing page</button>
+            <button class="prompt-chip" data-prompt="Help me debug this feature">Debug help</button>
+          </div>
+        </div>
+      </aside>
+
+      <main class="chat-panel">
+        <header class="chat-header">
+          <div>
+            <p class="eyebrow">Web assistant</p>
+            <h2>Talk with KALU</h2>
+          </div>
+          <button id="reset-chat" class="ghost-button">New chat</button>
+        </header>
+
+        <section id="messages" class="messages" aria-live="polite"></section>
+
+        <div id="typing" class="typing hidden">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <form id="chat-form" class="composer">
+          <textarea
+            id="message-input"
+            rows="1"
+            placeholder="Ask KALU anything..."
+            aria-label="Message KALU"
+          ></textarea>
+          <button type="submit" class="primary-button">Send</button>
+        </form>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

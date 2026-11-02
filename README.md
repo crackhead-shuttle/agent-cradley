@@ -1,2 +1,3 @@
-# agent-cradley
-KALU — industry-grade personal AI agent (starter scaffold)
+OPENAI_API_KEY=
+OPENAI_MODEL=gpt-4o-mini
+PORT=3000

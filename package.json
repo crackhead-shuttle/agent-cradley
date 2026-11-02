@@ -1,0 +1,13 @@
+{
+  "name": "agent-cradley",
+  "version": "1.0.0",
+  "description": "KALU — industry-grade personal AI agent (starter scaffold)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
